@@ -10,6 +10,9 @@ addition
 /**/dist/
 /**/.git/
 /**/app/css/
+/**/app/temp/**
+/**/app/assets/images/old/
+/**/gulp/tasks/deploy.js
 /**/_backstage
 /**/package-lock.json
 /**/Thumbs.db

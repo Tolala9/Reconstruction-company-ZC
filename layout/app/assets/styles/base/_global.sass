@@ -1,0 +1,371 @@
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body 
+	font-family: "Raleway", sans-serif
+	font-weight: 400
+	font-size: 14px
+	line-height: 1.71429
+	letter-spacing: 0.05em
+	color: $greyText
+	background-color: #fff
+	margin: 0
+
+// **
+// ** Font
+// ** --------------------------------------------------
+.fas
+	font-family: "font-awesome-sol"
+
+.font-sec
+	font-family: "Fira Sans", sans-serif
+
+.font-medium
+	font-weight: 500
+.font-semibold
+	font-weight: 600
+
+h1, h2, h3, h4, h5, h6, [class*='heading-']
+	margin-top: 0
+	margin-bottom: 0
+	font-family: "Raleway", sans-serif
+	font-weight: 400
+	letter-spacing: 0.05em
+	color: $blackText
+
+// **
+// ** H1
+// ** --------------------------------------------------
+h1, .heading-1
+	font-size: 36px
+	line-height: 1.2
+
+@media (min-width: 1470px)
+	h1, .heading-1
+		font-size: 42px
+@media (max-width: 480px)
+	h1, .heading-1
+		font-size: 27px
+
+
+// **
+// ** H2
+// ** --------------------------------------------------
+h2, .heading-2
+	font-size: 30px
+	//30
+	line-height: 1.2
+
+@media (min-width: 1470px)
+	h2, .heading-2
+		font-size: 36px
+		// 36
+
+h2 .heading-4, .heading-2 .heading-4
+	display: block
+	font-weight: 400
+	line-height: 1.2
+
+h2 .heading-main-text, .heading-2 .heading-main-text
+	display: inline-block
+
+h2 * + .heading-main-text, .heading-2 * + .heading-main-text
+	margin-top: 5px
+
+@media (min-width: 1200px)
+	h2 * + .heading-main-text, .heading-2 * + .heading-main-text
+		margin-top: 19px
+
+
+// **
+// ** H3
+// ** --------------------------------------------------
+h3, .heading-3
+	font-size: 26px
+	line-height: 1.2
+
+@media (max-width: 480px)
+	h3, .heading-3
+		font-size: 16px
+
+@media (min-width: 1470px)
+	h3, .heading-3
+		font-size: 30px
+
+// **
+// ** H4
+// ** --------------------------------------------------
+h4, .heading-4
+	font-size: 22px
+	line-height: 1.2
+
+* + h4
+	margin-top: 15px
+i + h4
+	margin-top: 10px
+	& + p
+		margin-top: 8px
+	a:hover
+		color: $greenText
+
+@media (min-width: 1470px)
+	h4, .heading-4
+		font-size: 26px
+@media (min-width: 1200px)
+	.heading-4 + h1
+		margin-top: 25px
+@media (max-width: 480px)
+	h4, .heading-4
+		font-size: 16px
+
+// **
+// ** H5
+// ** --------------------------------------------------
+h5, .heading-5
+	line-height: 1.441
+	font-size: 18px
+
+@media (min-width: 1470px)
+	h5, .heading-5
+		font-size: 22px
+
+// **
+// ** H6
+// ** --------------------------------------------------
+h6, .heading-6
+	line-height: 1.2
+	font-size: 15px
+
+
+.big
+	font-size: 16px
+
+.large
+	font-size: 18px
+
+
+// **
+// ** a
+// ** --------------------------------------------------
+h1 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+h2 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+h3 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+h4 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+h5 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+h6 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+[class*='heading-'] a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+// **
+// ** List
+// ** --------------------------------------------------
+ul, ol
+	display: block
+	list-style: none;
+	padding: 0
+	margin: 0
+	width: 100%
+li
+	list-style-type: none
+a
+	text-decoration: none
+	transition: 0.25s ease-out
+
+i
+	transition: 0.25s ease-out
+
+	
+// **
+// ** P
+// ** --------------------------------------------------
+p
+	margin: 0
+	font-family: "Fira Sans", sans-serif
+	font-size: 16px
+
+* + p
+	margin-top: 50px
+
+.add-title + p 
+	margin-top: 30px
+
+@media (min-width: 1470px)
+	p
+		font-size: 18px
+@media (max-width: 480px)
+	p
+			font-size: 14px
+	* + p
+		margin-top: 15px
+
+
+// **
+// ** Img Img-wrapper
+// ** --------------------------------------------------
+img
+	user-select: none
+.img-responsive
+	display: inline-block
+	max-width: 100%
+	height: auto
+	vertical-align: middle
+	margin: auto
+.img-section
+	width: auto
+	vertical-align: middle
+.img-circle
+	border-radius: 50%
+.img-wrapper
+	display: flex
+	justify-content: center
+	overflow: hidden
+
+@media (max-width: 1200px)
+	.cell-lg-3 .img-wrapper + 
+	.cell-lg-3 .img-wrapper
+		margin-top: 30px
+
+@media (max-width: 1200px)
+	.img-section
+		display: inline-block
+		max-width: 100%
+		height: auto
+		vertical-align: middle
+		margin: auto	
+
+// **
+// ** Position
+// ** --------------------------------------------------
+.justify-around
+	justify-content: flex-start
+.padding-l-30
+	padding-left: 30px
+.padding-t-30
+	padding-top: 30px
+
+
+// **
+// ** Divider
+// ** --------------------------------------------------
+hr 
+	margin-top: 0
+	margin-bottom: 0
+	border-top: 1px solid #90959e
+
+.divider 
+	line-height: 0
+.divider-default
+	width: 100%
+	height: 1px
+	border-top: 1px solid $grey
+	&+ *
+		margin-top: 25px
+* + .divider-default
+	margin-top: 25px
+
+.divider-section 
+	width: 100%
+	display: block
+	height: 100px
+	&-xs
+		height: 40px
+
+.divider-title
+	width: 120px
+	height: 1px
+	border-top: 3px solid $blue
+	margin-top: 15px
+	margin-bottom: 15px
+	&--centered
+		display: flex
+		margin: 15px auto
+
+.divider-title + .add-title
+	padding-top: 15px
+
+.divider-title + .list__default
+	padding-top: 30px
+
+ // **
+ // ** Text Alignment
+ // ** --------------------------------------------------
+
+.text-left
+	text-align: left
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+@media (min-width: 768px)
+	html:not(.lt-ie10)
+		.text-sm--left
+			text-align: left
+		.text-sm--center
+			text-align: center
+		.text-sm--right
+			text-align: right
+		.text-sm--justify
+			text-align: justify
+
+
+// **
+ // ** Addition
+ // ** --------------------------------------------------
+
+.button:focus, .button:active, .button:active:focus 
+	outline: none
+
+.disp-flex
+	display: flex
+
+.stop-scrolling
+	height: 100%
+	overflow: hidden
+
+label
+	display: inline-block
+	max-width: 100%
+	margin-bottom: 5px
+
+
+
+a
+	.active
+		color: $accentText
+
+
+
+
+
+

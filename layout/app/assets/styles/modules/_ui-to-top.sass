@@ -1,0 +1,88 @@
+.ui-to-top
+	width: 60px
+	height: 60px
+	font-size: 48px
+	line-height: 1
+	color: $white
+	background: $blue
+	border-radius: 50%
+	border: 1px solid $white
+	position: fixed
+	right: 80px
+	bottom: 15px
+	overflow: hidden
+	text-align: center
+	text-decoration: none
+	z-index: 20
+	transition: .45s all ease-in-out
+	transform: translateY(100px)
+	opacity: 0.8
+	&:hover
+		opacity: 1
+		background: $blue
+		text-decoration: none
+		i
+			color: $accent
+	&:focus
+		color: #fff
+	&.active
+		transform: translateY(-15px)
+	i
+		font-size: 30px
+
+html
+	&.mobile .ui-to-top, &.tablet .ui-to-top
+		display: none !important
+
+@media (max-width: 480px)
+	.ui-to-top
+		right: 20px
+		bottom: 20x
+
+@media (min-width: 480px)
+	.ui-to-top
+		right: 40px
+		bottom: 40px
+
+
+@media (min-width: 1470px)
+	.ui-to-top
+		right: 80px
+		bottom: 80px
+		transform: translateY(160px)
+		width: 80px
+		height: 80px
+		i
+			font-size: 40px
+			transform: translateY(12px)
+		
+	
+
+
+#toTop
+	display: none
+	text-decoration: none
+	position: fixed
+	bottom: 10px
+	right: 10px
+	overflow: hidden
+	width: 51px
+	height: 51px
+	border: none
+	text-indent: 100%
+	background: url(../img/ui.totop.png) no-repeat left top
+
+#toTopHover
+	background: url(../img/ui.totop.png) no-repeat left -51px
+	width: 51px
+	height: 51px
+	display: block
+	overflow: hidden
+	float: left
+	opacity: 0
+	-moz-opacity: 0
+	filter: alpha(opacity = 0)
+
+#toTop
+	&:active, &:focus
+		outline: none

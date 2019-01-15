@@ -1,0 +1,137 @@
+.section
+	max-width: 1470px
+	width: calc(100% - 30px)
+	margin-left: auto
+	margin-right: auto
+	&--full-width
+		max-width: none
+		width: 100%
+	&--white
+		background-color: $white
+	&--grey
+		background-color: $grey
+	&--dark-white
+		background-color: #f2f3f8
+
+.section-overley::before 
+  content: ''
+  position: absolute 
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: #6d4e3c
+  opacity: .5
+
+.section
+	background-size: cover
+
+@media (min-width: 1500px)
+	.section
+		width: 100%
+
+.section-xs
+	padding-top: 40px
+	padding-bottom: 40px
+
+.section-sm, .section-md, .section-lg, .section-xl
+	padding-top: 60px
+	padding-bottom: 60px
+.section-sm
+	padding-top: 30px
+	padding-top: 30px
+.section-lg--title
+	padding-top: 60px
+	padding-bottom: 50px
+
+@media (max-width: 480px)
+	.section-lg--title
+		padding-top: 60px
+		padding-bottom: 30px
+
+@media (min-width: 1200px)
+	.section-lg
+		padding-top: 90px
+		padding-bottom: 90px
+	.section-lg--title
+		padding-top: 90px
+		padding-bottom: 50px
+	.section-xl
+		padding-top: 140px
+		padding-bottom: 140px
+
+@media (min-width: 1470px)
+	.section-lg
+		padding-top: 110px
+		padding-bottom: 110px
+	.section-lg--title
+		padding-top: 110px
+		padding-bottom: 50px
+
+.section-relative
+	position: relative
+	z-index: 1
+
+
+.section
+	&--white
+		background-color: white
+	&--light-blue
+		background-color: $lightBlue
+		h1, h2, h3, h4, p
+			color: $whiteText
+		.divider-title
+			border-color: $white
+	&--blue
+		background-color: $blue
+		h1, h2, h3, h4, p
+			color: $whiteText
+		.divider-title
+			border-color: $white
+		
+
+.section-none-pad-bot
+	padding-bottom: 0
+
+
+
+.section__after-swiper-modern
+	position: relative
+	background-color: transparent
+	z-index: 10
+
+@media (min-width: 1200px) 
+	.section__after-swiper-modern
+		padding-top: 0
+		margin-top: -63px
+
+.section--with-img
+	padding-top: 0
+	padding-bottom: 0
+
+.section-lg
+	.section-content-wrap
+		padding-top: 90px
+		padding-bottom: 90px
+		padding-left: 8%
+	.section-none-pad-bot
+		padding-bottom: 0
+
+@media (max-width: 480px)
+	.section-lg
+		.section-content-wrap
+			padding-top: 60px
+			padding-bottom: 60px
+			padding-left: 0
+@media (min-width: 1470px)
+	.section-lg
+		.section-content-wrap
+			padding-top: 110px
+			padding-bottom: 110px
+			padding-left: 8%
+		.section-none-pad-bot
+			padding-bottom: 0
+
+@media (max-width: 480px)
+	.section-xs-mt-30
+		margin-top: 30px

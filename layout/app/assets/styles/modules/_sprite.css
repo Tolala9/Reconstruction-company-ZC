@@ -1,0 +1,39 @@
+/* Do not edit modules/_sprite.css directly as it is generated automatically by Gulp
+Instead edit gulp/templates/sprite */
+
+
+	
+	.icon {
+			background-image: url('../../assets/img/sprites/sprite-a1de973e.svg');
+		}
+
+	.icon path {
+		fill: #fff;
+	}
+
+		.no-svg .icon {
+			background-image: url('../../assets/img/sprites/sprite-a1de973e.png');
+		}
+
+	.icon--main_page--achievement {
+		width: 66px;
+		height: 66px;
+		background-position: 0 0;
+		display: block;
+	}
+	
+
+	.icon--main_page--student {
+		width: 66px;
+		height: 66px;
+		background-position: 100% 0;
+		display: block;
+	}
+	
+
+	.icon--main_page--success {
+		width: 66px;
+		height: 66px;
+		background-position: 0 100%;
+		display: block;
+	}

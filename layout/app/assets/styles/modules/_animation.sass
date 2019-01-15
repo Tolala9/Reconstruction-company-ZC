@@ -1,0 +1,259 @@
+.animated
+  animation-duration: 1s
+  animation-fill-mode: both
+  &.infinite
+    animation-iteration-count: infinite
+  &.hinge
+    animation-duration: 2s
+
+html:not(.lt-ie10) .not-animated
+  opacity: 0
+
+@-webkit-keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+
+.fadeIn
+  animation-name: fadeIn
+
+@-webkit-keyframes fadeInUp
+  0%
+    opacity: 0
+    transform: translate3d(0, 100%, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+
+@keyframes fadeInUp
+  0%
+    opacity: 0
+    transform: translate3d(0, 100%, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+
+.fadeInUp
+  animation-name: fadeInUp
+
+@-webkit-keyframes fadeInDown
+  0%
+    opacity: 0
+    transform: translate3d(0, -100%, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+
+@keyframes fadeInDown
+  0%
+    opacity: 0
+    transform: translate3d(0, -100%, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+
+.fadeInDown
+  animation-name: fadeInDown
+
+@-webkit-keyframes fadeInLeft
+  0%
+    opacity: 0
+    transform: translate3d(-100%, 0, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+
+@keyframes fadeInLeft
+  0%
+    opacity: 0
+    transform: translate3d(-100%, 0, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+
+.fadeInLeft
+  animation-name: fadeInLeft
+
+@-webkit-keyframes fadeInRight
+  0%
+    opacity: 0
+    transform: translate3d(100%, 0, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+
+@keyframes fadeInRight
+  0%
+    opacity: 0
+    transform: translate3d(100%, 0, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+
+.fadeInRight
+  animation-name: fadeInRight
+
+@-webkit-keyframes fadeOut
+  0%
+    opacity: 1
+
+  100%
+    opacity: 0
+
+
+@keyframes fadeOut
+  0%
+    opacity: 1
+
+  100%
+    opacity: 0
+
+
+.fadeOut
+  animation-name: fadeOut
+
+@-webkit-keyframes slideInDown
+  0%
+    transform: translate3d(0, -100%, 0)
+    visibility: visible
+
+  100%
+    transform: translate3d(0, 0, 0)
+
+
+@keyframes slideInDown
+  0%
+    transform: translate3d(0, -100%, 0)
+    visibility: visible
+
+  100%
+    transform: translate3d(0, 0, 0)
+
+
+.slideInDown
+  animation-name: slideInDown
+
+@-webkit-keyframes slideInLeft
+  0%
+    transform: translate3d(-100%, 0, 0)
+    visibility: visible
+
+  100%
+    transform: translate3d(0, 0, 0)
+
+
+@keyframes slideInLeft
+  0%
+    transform: translate3d(-100%, 0, 0)
+    visibility: visible
+
+  100%
+    transform: translate3d(0, 0, 0)
+
+
+.slideInLeft
+  animation-name: slideInLeft
+
+@-webkit-keyframes slideInRight
+  0%
+    transform: translate3d(100%, 0, 0)
+    visibility: visible
+
+  100%
+    transform: translate3d(0, 0, 0)
+
+
+@keyframes slideInRight
+  0%
+    transform: translate3d(100%, 0, 0)
+    visibility: visible
+
+  100%
+    transform: translate3d(0, 0, 0)
+
+
+.slideInRight
+  animation-name: slideInRight
+
+@-webkit-keyframes slideOutDown
+  0%
+    transform: translate3d(0, 0, 0)
+
+  100%
+    visibility: hidden
+    transform: translate3d(0, 100%, 0)
+
+
+@keyframes slideOutDown
+  0%
+    transform: translate3d(0, 0, 0)
+
+  100%
+    visibility: hidden
+    transform: translate3d(0, 100%, 0)
+
+
+.slideOutDown
+  animation-name: slideOutDown
+
+@keyframes jackInTheBox
+  from
+    opacity: 0
+    transform: scale(0.6) rotate(20deg)
+    transform-origin: center bottom
+
+  50%
+    transform: rotate(-10deg)
+
+  70%
+    transform: rotate(3deg)
+
+  to
+    opacity: 1
+    transform: scale(1)
+
+
+.jackInTheBox
+  animation-name: jackInTheBox
+
+@keyframes rd-navbar-slide-down
+  0%
+    transform: translateY(-100%)
+
+  100%
+    transform: translateY(0)
+
+
+@keyframes rd-navbar-slide-up
+  0%
+    transform: translateY(0)
+
+  100%
+    transform: translateY(-100%)

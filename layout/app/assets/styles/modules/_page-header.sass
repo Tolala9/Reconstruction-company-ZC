@@ -1,0 +1,124 @@
+.page-header
+	display: flex
+	padding: 15px 40px
+	border-bottom: 1px solid $grey
+	&__logo
+		flex: 1
+		display: flex
+	&__menu-content
+		display: flex
+		flex: 1
+	&__social 
+		display: flex
+		margin: auto
+		a
+			color: $greyText
+			font-size: 16px
+			.prymary-socials-frame
+				display: flex
+				margin: auto 0
+				width: 25px
+				height: 25px
+				line-height: 1
+				border: 1px solid $black
+				border-radius: 8px
+				transition: 0.25s ease-out
+				i
+					margin: auto
+					transition: 0.25s ease-out
+				&:hover, &:focus
+					background-color: $blue
+					i
+						color: $white
+
+	&__logo-text
+		display: inline-block	
+		margin: auto 10px
+		text-align: center
+		.first-text
+			font-size: 16px	
+			line-height: 1
+			margin-bottom: 15px
+		.sec-text
+			font-size: 20px	
+			line-height: 1
+			color: $blue
+			font-weight: 600
+
+@media (min-width: 1470px)
+	.page-header
+		&__social
+			a
+				font-size: 18px
+				.prymary-socials-frame
+					width: 30px
+					height: 30px
+
+@media (min-width: 1470px)
+	.page-header
+		&__logo-text
+			.first-text
+				font-size: 20px
+			.sec-text
+				font-size: 24px
+
+@media (max-width: 480px)
+	.page-header
+		padding: 15px 20px
+		&__logo-text
+			margin: auto 40px auto 5px
+			.first-text
+				font-size: 14px
+			.sec-text
+				font-size: 16px
+
+
+.primary-nav
+	margin: auto 0
+	ul
+		li
+			display: inline-block
+			list-style-type: none
+			margin-left: 7px
+			&:first-child
+				margin-left: 0
+		a
+			text-decoration: none
+			letter-spacing: 0.2px
+			color: $blackText
+			font-weight: 600
+			font-size: 16px
+			font-family: 'Raleway', sans-serif
+			transition: 0.25s ease-out
+			&:hover 
+				color: $accentText
+		.active
+			color: $accentText
+
+@media (min-width: 1470px)
+	.primary-nav
+		ul
+			li
+				margin-left: 20px
+				a
+					font-size: 18px
+
+@media (max-width: 1200px)
+	.page-header__menu-content
+		display: none
+	.page-header__social
+		display: none
+
+.prymary-socials
+	ul
+		li
+			display: inline-block
+			list-style-type: none
+			margin-left: 10px
+			&:first-child
+				margin-left: 0
+
+
+
+			
+
