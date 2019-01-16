@@ -2511,72 +2511,34 @@ template {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 40px;
+  padding: 25px 220px 0;
   border-bottom: 1px solid #DADDD8; }
-  .page-header__logo {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  .page-header__menu-content {
+  .page-header__branding {
+    font-size: 28px;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 700; }
+  .page-header__contacts {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
-  .page-header__social {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .page-header__menu {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin: auto; }
-    .page-header__social a {
-      color: #413A3A;
-      font-size: 16px; }
-      .page-header__social a .prymary-socials-frame {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        margin: auto 0;
-        width: 25px;
-        height: 25px;
-        line-height: 1;
-        border: 1px solid #2D2E2E;
-        -webkit-border-radius: 8px;
-                border-radius: 8px;
-        -webkit-transition: 0.25s ease-out;
-        -o-transition: 0.25s ease-out;
-        transition: 0.25s ease-out; }
-        .page-header__social a .prymary-socials-frame i {
-          margin: auto;
-          -webkit-transition: 0.25s ease-out;
-          -o-transition: 0.25s ease-out;
-          transition: 0.25s ease-out; }
-        .page-header__social a .prymary-socials-frame:hover, .page-header__social a .prymary-socials-frame:focus {
-          background-color: #0D2D62; }
-          .page-header__social a .prymary-socials-frame:hover i, .page-header__social a .prymary-socials-frame:focus i {
-            color: #FFFFFF; }
-  .page-header__logo-text {
-    display: inline-block;
-    margin: auto 10px;
-    text-align: center; }
-    .page-header__logo-text .first-text {
-      font-size: 16px;
-      line-height: 1;
-      margin-bottom: 15px; }
-    .page-header__logo-text .sec-text {
-      font-size: 20px;
-      line-height: 1;
-      color: #0D2D62;
-      font-weight: 600; }
+    margin-top: 20px;
+    background-color: black; }
+
+.contact-block {
+  padding: 0px 15px; }
+  .contact-block__text {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 20px; }
 
 @media (min-width: 1470px) {
   .page-header__social a {
@@ -4601,3 +4563,8 @@ Instead edit gulp/templates/sprite */
   height: 66px;
   background-position: 0 100%;
   display: block; }
+
+.border {
+  display: inline-block;
+  border: 5px solid black;
+  padding: 0px 15px; }

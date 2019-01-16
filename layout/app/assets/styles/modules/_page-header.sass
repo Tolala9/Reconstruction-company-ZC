@@ -1,49 +1,73 @@
 .page-header
 	display: flex
-	padding: 15px 40px
+	padding: 25px 220px 0
 	border-bottom: 1px solid $grey
-	&__logo
-		flex: 1
+	&__branding
+		font-size: 28px
+		font-family: 'M PLUS 1p', sans-serif
+		font-weight: 700
+	&__contacts
 		display: flex
-	&__menu-content
-		display: flex
-		flex: 1
-	&__social 
-		display: flex
-		margin: auto
-		a
-			color: $greyText
-			font-size: 16px
-			.prymary-socials-frame
-				display: flex
-				margin: auto 0
-				width: 25px
-				height: 25px
-				line-height: 1
-				border: 1px solid $black
-				border-radius: 8px
-				transition: 0.25s ease-out
-				i
-					margin: auto
-					transition: 0.25s ease-out
-				&:hover, &:focus
-					background-color: $blue
-					i
-						color: $white
+		justify-content: flex-end
 
-	&__logo-text
-		display: inline-block	
-		margin: auto 10px
-		text-align: center
-		.first-text
-			font-size: 16px	
-			line-height: 1
-			margin-bottom: 15px
-		.sec-text
-			font-size: 20px	
-			line-height: 1
-			color: $blue
-			font-weight: 600
+
+
+	&__menu
+		display: flex
+		margin-top: 20px	
+		background-color: black
+
+.contact-block
+	padding: 0px 15px
+	&__text
+		font-family: "Fira Sans", sans-serif
+		font-size: 20px
+
+
+
+	// &__logo
+	// 	flex: 1
+	// 	display: flex
+	// &__menu
+	// 	display: flex
+	// 	flex: 1
+	// 	background-color: black
+	// &__social 
+	// 	display: flex
+	// 	margin: auto
+	// 	a
+	// 		color: $greyText
+	// 		font-size: 16px
+	// 		.prymary-socials-frame
+	// 			display: flex
+	// 			margin: auto 0
+	// 			width: 25px
+	// 			height: 25px
+	// 			line-height: 1
+	// 			border: 1px solid $black
+	// 			border-radius: 8px
+	// 			transition: 0.25s ease-out
+	// 			i
+	// 				margin: auto
+	// 				transition: 0.25s ease-out
+	// 			&:hover, &:focus
+	// 				background-color: $blue
+	// 				i
+	// 					color: $white
+
+	// &__logo-text
+	// 	display: inline-block	
+	// 	margin: auto 10px
+	// 	text-align: center
+	// 	.first-text
+	// 		font-size: 16px	
+	// 		line-height: 1
+	// 		margin-bottom: 15px
+	// 	.sec-text
+	// 		font-size: 20px	
+	// 		line-height: 1
+	// 		color: $blue
+	// 		font-weight: 600
 
 @media (min-width: 1470px)
 	.page-header
@@ -120,5 +144,4 @@
 
 
 
-			
 
