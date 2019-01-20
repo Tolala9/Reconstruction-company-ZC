@@ -20,130 +20,86 @@
 
 	&__menu
 		display: flex
+		flex-direction: row
+		justify-content: space-between
 		margin-top: 20px	
+		padding: 0px 20px
 		background-color: $black
-
-
-
-
-
-
-	// &__logo
-	// 	flex: 1
-	// 	display: flex
-	// &__menu
-	// 	display: flex
-	// 	flex: 1
-	// 	background-color: black
-	// &__social 
-	// 	display: flex
-	// 	margin: auto
-	// 	a
-	// 		color: $greyText
-	// 		font-size: 16px
-	// 		.prymary-socials-frame
-	// 			display: flex
-	// 			margin: auto 0
-	// 			width: 25px
-	// 			height: 25px
-	// 			line-height: 1
-	// 			border: 1px solid $black
-	// 			border-radius: 8px
-	// 			transition: 0.25s ease-out
-	// 			i
-	// 				margin: auto
-	// 				transition: 0.25s ease-out
-	// 			&:hover, &:focus
-	// 				background-color: $blue
-	// 				i
-	// 					color: $white
-
-	// &__logo-text
-	// 	display: inline-block	
-	// 	margin: auto 10px
-	// 	text-align: center
-	// 	.first-text
-	// 		font-size: 16px	
-	// 		line-height: 1
-	// 		margin-bottom: 15px
-	// 	.sec-text
-	// 		font-size: 20px	
-	// 		line-height: 1
-	// 		color: $blue
-	// 		font-weight: 600
-
-// @media (min-width: 1470px)
-// 	.page-header
-// 		&__social
-// 			a
-// 				font-size: 18px
-// 				.prymary-socials-frame
-// 					width: 30px
-// 					height: 30px
-
-// @media (min-width: 1470px)
-// 	.page-header
-// 		&__logo-text
-// 			.first-text
-// 				font-size: 20px
-// 			.sec-text
-// 				font-size: 24px
-
-// @media (max-width: 480px)
-// 	.page-header
-// 		padding: 15px 20px
-// 		&__logo-text
-// 			margin: auto 40px auto 5px
-// 			.first-text
-// 				font-size: 14px
-// 			.sec-text
-// 				font-size: 16px
-
+		height: 60px
+		color: white
 
 .primary-nav
-	margin: auto 0
+	display: flex
 	ul
 		li
-			display: inline-block
+			display: inline-flex
+			height: 100%
+			justify-content: center
+			flex-direction: column
 			list-style-type: none
 			margin-left: 7px
 			&:first-child
 				margin-left: 0
 		a
+			display: flex
+			height: 100%
+			justify-content: center
+			flex-direction: column
+			padding: 0 15px
 			text-decoration: none
 			letter-spacing: 0.2px
-			color: $blackText
+			color: $whiteText
 			font-weight: 600
 			font-size: 16px
 			font-family: 'Raleway', sans-serif
+			text-transform: uppercase
+			letter-spacing: 1px
 			transition: 0.25s ease-out
 			&:hover 
 				color: $accentText
-		.active
-			color: $accentText
+		.active 
+			color: $whiteText
+			background-color: $accent
+			&:hover
+				color: $whiteText
+				cursor: auto
 
-@media (min-width: 1470px)
-	.primary-nav
-		ul
-			li
-				margin-left: 20px
-				a
-					font-size: 18px
-
-@media (max-width: 1200px)
-	.page-header__menu-content
-		display: none
-	.page-header__social
-		display: none
-
+	
 .prymary-socials
+	display: flex
 	ul
+		display: flex
 		li
-			display: inline-block
+			display: inline-flex
+			justify-content: center
+			flex-direction: column
 			list-style-type: none
-			margin-left: 10px
+			width: 30px
+			height: 30px
+			margin: auto 0px auto 10px
 			&:first-child
 				margin-left: 0
+		a
+			display: flex
+			flex-direction: column
+			text-align: center
+			padding: 0 7px
+			text-decoration: none
+			color: $blackText
+			background-color: $white
+			font-size: 18px
+			transition: 0.25s ease-out
+			&:last-child
+			margin-left: 0
+			&:hover 
+				color: $whiteText
+				background-color: $accentText
+
+		
+
+
+
+			
 
 
 
