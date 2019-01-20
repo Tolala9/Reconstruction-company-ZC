@@ -2500,8 +2500,7 @@ html {
 
 @media (min-width: 1470px) {
   .section-lg {
-    padding-top: 110px;
-    padding-bottom: 110px; }
+    padding: 110px 90px 110px 90px; }
   .section-lg--title {
     padding-top: 110px;
     padding-bottom: 50px; } }
@@ -2777,7 +2776,6 @@ html {
               transform: translate3d(0, 0, 0) scale3d(1, 1, 1); }
 
 .thumb {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2785,51 +2783,42 @@ html {
 
 .thumb-default {
   max-width: 604px;
-  background-color: #FFFFFF; }
-  .thumb-default h3 {
-    color: #035E7B; }
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .thumb-default-title {
-    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 30px;
-    padding-right: 20px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-weight: 400; }
+    color: #222931;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 30px; }
+    .thumb-default-title:before {
+      content: ' ';
+      width: 40px;
+      height: 4px;
+      background-color: #035E7B;
+      margin: auto 15px auto 0; }
+  .thumb-default-img {
+    width: 100%;
+    height: auto; }
+  .thumb-default-text {
+    font-size: 18px;
+    margin-top: 30px; }
   .thumb-default picture {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    .thumb-default picture-img {
-      width: 140px;
-      height: 110px; }
-
-@media (min-width: 1470px) {
-  .thumb-default {
-    max-width: 782px; }
-  .thumb-default-img {
-    width: 150px;
-    height: 120px; } }
-
-@media (max-width: 480px) {
-  .thumb-default-img {
-    width: 85px;
-    height: 85px; } }
-
-* + .thumb-default {
-  margin-top: 60px; }
-
-.thumb-default + .thumb-default {
-  margin-top: 30px; }
-
-.thumb-default + .button {
-  margin-top: 60px; }
 
 .thumb-default__icon {
   max-width: 604px;

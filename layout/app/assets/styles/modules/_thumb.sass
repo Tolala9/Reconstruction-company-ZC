@@ -1,5 +1,5 @@
 .thumb
-	position: relative
+	// position: relative
 	display: flex
 	
 // **
@@ -8,40 +8,32 @@
 .thumb-default
 	max-width: 604px
 	background-color: $white
-	h3
-		color: $accentText
-
+	display: flex
+	flex-direction: column
 	&-title
-		position: relative
+		// position: relative
 		display: flex
-		padding-left: 30px
-		padding-right: 20px
-		align-items: center
-		font-weight: 400	
+		color: $blackText
+		font-size: 36px
+		font-weight: 500	
+		margin-top: 30px
+		&:before
+			content: ' '
+			width: 40px
+			height: 4px
+			background-color: $accent
+			margin: auto 15px auto 0
+	&-img
+		width: 100%
+		height: auto
+	&-text
+		font-size: 18px
+		margin-top: 30px
+
 	picture
 		display: flex
-		&-img
-			width: 140px
-			height: 110px
 
-@media (min-width: 1470px)
-	.thumb-default
-		max-width: 782px
-	.thumb-default-img
-		width: 150px
-		height: 120px
-@media (max-width: 480px)
-	.thumb-default-img
-		width: 85px
-		height: 85px
 
-* + .thumb-default
-	margin-top: 60px
-
-.thumb-default + .thumb-default
-	margin-top: 30px
-.thumb-default + .button
-	margin-top: 60px
 
 
 // **
