@@ -190,9 +190,6 @@ p {
   font-family: "Fira Sans", sans-serif;
   font-size: 16px; }
 
-* + p {
-  margin-top: 50px; }
-
 .add-title + p {
   margin-top: 30px; }
 
@@ -2479,7 +2476,7 @@ html {
 
 .section-sm {
   padding-top: 30px;
-  padding-top: 30px; }
+  padding-bottom: 30px; }
 
 .section-lg--title {
   padding-top: 60px;
@@ -2529,6 +2526,11 @@ html {
     color: #FFFFFF; }
   .section--blue .divider-title {
     border-color: #FFFFFF; }
+
+.section--grey {
+  background-color: #CDD5D1; }
+  .section--grey h1, .section--grey h2, .section--grey h3, .section--grey h4, .section--grey p {
+    color: #222931; }
 
 .section-none-pad-bot {
   padding-bottom: 0; }
@@ -3601,7 +3603,7 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
 
 .swiper-modern .text-wrapper {
   background-color: rgba(255, 255, 255, 0.85);
-  max-width: 800px;
+  max-width: 600px;
   padding: 30px;
   margin-top: 70px; }
   .swiper-modern .text-wrapper h1 {
@@ -4427,3 +4429,20 @@ Instead edit gulp/templates/sprite */
     color: #CDD5D1;
     font-size: 20px;
     margin-right: 15px; }
+
+.adv-wrap-item {
+  font-family: "Fira Sans", sans-serif;
+  padding-left: 50px; }
+  .adv-wrap-item .icon-adv {
+    width: 64px;
+    height: 64px; }
+  .adv-wrap-item span {
+    font-size: 44px;
+    font-weight: 500;
+    margin-left: 10px;
+    line-height: 44px; }
+  .adv-wrap-item p {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; }
