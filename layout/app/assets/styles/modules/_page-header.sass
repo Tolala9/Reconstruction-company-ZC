@@ -1,7 +1,8 @@
 .page-header
 	display: flex
 	padding: 25px 220px 0 
-	border-bottom: 1px solid $grey
+	// border-bottom: 1px solid $grey
+	z-index: 0
 	&__branding
 		font-size: 28px
 		font-family: 'M PLUS 1p', sans-serif
@@ -26,10 +27,13 @@
 		padding: 0px 20px
 		background-color: $black
 		height: 60px
-		color: white
-
+		color: white 
+.page-header__menu
+	z-index: 100
+	position: relative
 .primary-nav
 	display: flex
+	z-index: 100
 	ul
 		li
 			display: inline-flex
@@ -67,6 +71,7 @@
 	
 .prymary-socials
 	display: flex
+	z-index: 100
 	ul
 		display: flex
 		li

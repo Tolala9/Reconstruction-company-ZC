@@ -12,23 +12,23 @@
 	transition: 250ms all ease-in-out
 	font-size: 16px
 	font-weight: 700
-	border: 2px solid transparent
+	border: 4px solid transparent
 	letter-spacing: 0.05em
 	padding: 9px 15px
 	// text-transform: uppercase
-	min-width: 180px
-	min-height: 51px
+	// min-width: 180px
+	min-height: 50px
 	i
 		margin-left: 8px
 		transition: 250ms all ease-in-out
 	&-normal
 		margin-top: 0
-		color: $blueText
+		color: $blackText
 		background-color: $white
-		border: 2px solid $blue
+		border: 4px solid $black
 		&:hover
 			color: $whiteText
-			background-color: $blue
+			background-color: $black
 			i
 				color: $accent
 	&-block
@@ -40,11 +40,11 @@
 		background-color: $accent
 		&:focus, &:active
 			color: #fff
-			background-color: $blue
+			background-color: $black
 		&:hover
 			color: #fff
-			background-color: $blue
-			border: 2px solid $blue
+			background-color: $black
+			border: 4px solid $black
 		&--white
 			color: #fff
 			background-color: $accent
@@ -54,17 +54,23 @@
 			&:hover
 				color: $accentText
 				background-color: $white
-				border: 2px solid $white
+				border: 4px solid $white
 		
 
 .button-primary + .button-normal
   margin-left: 30px
-@media (max-width: 560px)
-	.button-primary + .button-normal
-  	margin-left: 0px
 
 * + .button
   margin-top: 30px
+
+@media only screen and (min-width: 480px)
+  .button 
+      padding: 2px 25px
+  
+@media (max-width: 560px)
+  .button-primary + .button-normal
+    margin-left: 0px
+
 
 @media (min-width: 768px)
 	.section-box__right * + .button
@@ -72,7 +78,8 @@
 	
 @media (min-width: 1470px)
 	.button
-		font-size: 20px
+		font-size: 18px
+    font-weight: 700
 
 .button--effect-cool
   position: relative
@@ -86,7 +93,7 @@
     left: -1px
     width: calc(100% + 2px)
     height: calc(100% + 2px)
-    background: $blue
+    background: $black
     z-index: -1
     opacity: 0
     transform: scale3d(0.7, 1, 1)
@@ -106,8 +113,9 @@
     border-radius: 10px
   &.button-circle:before
     border-radius: 30px
-  &.button-social::before, &.button-primary::before
-    background: $blue
+  &.button-social::before, 
+  &.button-primary::before
+    background: $black
 
   &.button-gray-drago-dark:before
     background-color: $blue
@@ -144,6 +152,4 @@
       transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
   
 
-@media only screen and (min-width: 480px)
-	.button 
-			padding: 13px 30px
+
