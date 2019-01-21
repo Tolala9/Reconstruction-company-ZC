@@ -4468,3 +4468,18 @@ Instead edit gulp/templates/sprite */
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.section__service {
+  position: relative; }
+
+.serivce__block {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin-left: 90px;
+  padding: 110px 30px 30px; }
+
+.service__title {
+  padding-bottom: 30px; }
