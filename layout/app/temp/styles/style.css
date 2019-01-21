@@ -2801,7 +2801,8 @@ html {
     color: #222931;
     font-size: 36px;
     font-weight: 500;
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding: 0 10px; }
     .thumb-default-title:before {
       content: ' ';
       width: 40px;
@@ -2813,12 +2814,11 @@ html {
     height: auto; }
   .thumb-default-text {
     font-size: 18px;
-    margin-top: 30px; }
-  .thumb-default picture {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    margin-top: 30px;
+    padding: 0 10px; }
+
+a.thumb-default:hover {
+  background-color: #DADDD8; }
 
 .thumb-default__icon {
   max-width: 604px;
@@ -3452,7 +3452,7 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
     display: inline-block;
     -webkit-border-radius: 100%;
             border-radius: 100%;
-    background: transparent;
+    background: #FFFFFF;
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s; }
@@ -3467,7 +3467,7 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
               border-radius: 50%;
       border: 1px solid #fff; }
     .swiper-pagination:not(.swiper-pagination-index) .swiper-pagination-bullet.swiper-pagination-bullet-active, .swiper-pagination:not(.swiper-pagination-index) .swiper-pagination-bullet:hover {
-      background: #0D2D62; }
+      background: #222931; }
   .swiper-pagination:not(.swiper-pagination-index).swiper-pagination-clickable .swiper-pagination-bullet {
     cursor: pointer; }
 
