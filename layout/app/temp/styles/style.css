@@ -297,6 +297,12 @@ hr {
     display: flex;
     margin: 15px auto; }
 
+.divider-title-new {
+  width: 40px;
+  height: 1px;
+  border-top: 4px solid #035E7B;
+  margin: 15px auto; }
+
 .divider-title + .add-title {
   padding-top: 15px; }
 
@@ -2451,6 +2457,9 @@ html {
     background-color: #035E7B;
     color: #FFFFFF; }
 
+.section-divider {
+  height: 110px; }
+
 .section-overley::before {
   content: '';
   position: absolute;
@@ -2506,7 +2515,9 @@ html {
     padding: 110px 90px 110px 90px; }
   .section-lg--title {
     padding-top: 110px;
-    padding-bottom: 50px; } }
+    padding-bottom: 50px; }
+  .section-lg--topline {
+    padding: 90px 90px 110px 90px; } }
 
 .section-relative {
   position: relative;
@@ -4483,3 +4494,87 @@ Instead edit gulp/templates/sprite */
 
 .service__title {
   padding-bottom: 30px; }
+
+.section__portfolio .controls {
+  display: block;
+  clear: auto;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 60px; }
+  .section__portfolio .controls ul li {
+    display: inline-block;
+    margin: 0 9px;
+    cursor: pointer; }
+  .section__portfolio .controls ul li.active {
+    color: #035E7B; }
+
+#portfolio-grid {
+  display: block;
+  width: 100%; }
+
+.portfolio-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 30px; }
+
+.portfolio-item {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-bottom: 60px; }
+
+.portfolio-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%; }
+
+.thumb-portfolio {
+  max-width: 520px;
+  background-color: #FFFFFF;
+  display: inline-block;
+  border: solid 1px #DADDD8; }
+  .thumb-portfolio-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: #222931;
+    font-weight: 500;
+    margin-top: 30px;
+    padding: 0 10px; }
+    .thumb-portfolio-title:before {
+      content: ' ';
+      width: 40px;
+      height: 4px;
+      background-color: #035E7B;
+      margin: auto 15px auto 0; }
+  .thumb-portfolio-img {
+    width: 100%;
+    height: auto; }
+  .thumb-portfolio-address {
+    font-size: 18px;
+    font-family: "Fira Sans", sans-serif;
+    font-style: italic;
+    margin-top: 30px;
+    padding: 0 10px; }
+  .thumb-portfolio-time {
+    font-size: 18px;
+    font-family: "Fira Sans", sans-serif;
+    font-style: italic;
+    padding: 0 10px; }
+
+a.thumb-default:hover {
+  background-color: #DADDD8; }

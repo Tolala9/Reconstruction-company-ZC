@@ -11,6 +11,7 @@ import Preloader  					from './modules/preloader';
 import Wow			  					from './modules/wow';
 import Counter 							from './modules/counter';
 import Parallax 						from './modules/material-parallax';
+import Portfolio 						from './modules/portfolio-mixitup';
 
 // Instantiate a new object using our modules/classes
 var copyrightYear 			= new CopyrightYear();
@@ -21,6 +22,7 @@ var preloader 					= new Preloader();
 var wow 								= new Wow();
 var counterAnimate 			= new Counter();
 var paralax 						= new Parallax();
+var portfolio 					= new Portfolio();
 
 
 

@@ -1,0 +1,80 @@
+.section__portfolio
+
+	.controls
+		display: block
+		clear: auto
+		text-align: center
+		font-family: "Fira Sans", sans-serif
+		font-size: 20px
+		text-transform: uppercase
+		margin-bottom: 60px
+		ul
+			li
+				display: inline-block
+				margin: 0 9px
+				cursor: pointer
+			li.active
+				color: $accent
+
+#portfolio-grid
+	display: block
+	width: 100%
+
+.portfolio-title
+	text-align: center
+	font-size: 42px
+	margin-bottom: 30px
+
+.portfolio-item
+	display: none
+	width: 100%
+	float: left
+	margin-bottom: 60px
+
+	
+.portfolio-button
+	display: flex
+	justify-content: center	
+	flex-direction: row
+	width: 100%
+
+	
+// **
+// ** Thumb portfolio
+// ** --------------------------------------------------
+.thumb-portfolio
+	max-width: 520px
+	background-color: $white
+	display: inline-block
+	border: solid 1px $grey
+	&-title
+		// position: relative
+		display: flex
+		color: $blackText
+		// font-size: 36px
+		font-weight: 500	
+		margin-top: 30px
+		padding: 0 10px
+		&:before
+			content: ' '
+			width: 40px
+			height: 4px
+			background-color: $accent
+			margin: auto 15px auto 0
+	&-img
+		width: 100%
+		height: auto
+	&-address
+		font-size: 18px
+		font-family: "Fira Sans", sans-serif
+		font-style: italic
+		margin-top: 30px
+		padding: 0 10px
+	&-time
+		font-size: 18px
+		font-family: "Fira Sans", sans-serif
+		font-style: italic
+		// margin-top: 30px
+		padding: 0 10px
+a.thumb-default:hover
+	background-color: $grey

@@ -106,14 +106,18 @@ var _materialParallax = __webpack_require__(9);
 
 var _materialParallax2 = _interopRequireDefault(_materialParallax);
 
+var _portfolioMixitup = __webpack_require__(10);
+
+var _portfolioMixitup2 = _interopRequireDefault(_portfolioMixitup);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Instantiate a new object using our modules/classes
-
+// 3rd party packages from NPM
+var copyrightYear = new _copyrightYear2.default();
 // import $ from 'jquery'; 
 
 // Our modules / classes 
-var copyrightYear = new _copyrightYear2.default(); // 3rd party packages from NPM
 
 var uitotop = new _uiToTop2.default();
 var swiper = new _swiper2.default();
@@ -122,6 +126,7 @@ var preloader = new _preloader2.default();
 var wow = new _wow2.default();
 var counterAnimate = new _counter2.default();
 var paralax = new _materialParallax2.default();
+var portfolio = new _portfolioMixitup2.default();
 
 /***/ }),
 /* 1 */
@@ -10697,6 +10702,60 @@ var Parallax = function () {
 }();
 
 exports.default = Parallax;
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Portfolio = function () {
+  function Portfolio() {
+    _classCallCheck(this, Portfolio);
+
+    this.allMethods();
+  }
+
+  _createClass(Portfolio, [{
+    key: "allMethods",
+    value: function allMethods() {
+
+      (function () {
+
+        $("section__portfolio li").click(function () {
+          $("section__portfolio li").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        $("#portfolio-grid").mixItUp();
+
+        // var mixer = mixItUp("#portfolio-grid");
+
+        // mixer.filter('.category-2');
+
+        //  var mixer = mixitup("#portfolio-grid", {
+        //   load: {
+        //     filter: '.category-2'
+        //   }
+        // });
+
+      })();
+    }
+  }]);
+
+  return Portfolio;
+}();
+
+exports.default = Portfolio;
 
 /***/ })
 /******/ ]);
