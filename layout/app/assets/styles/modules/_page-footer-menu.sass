@@ -1,0 +1,98 @@
+.page-footer
+	&__branding
+		display: flex
+		align-self: center
+		font-size: 28px
+		font-family: 'M PLUS 1p', sans-serif
+		font-weight: 700
+	&__contacts
+		display: flex
+		justify-content: flex-end
+	
+	&__menu
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		padding: 0px 90px
+		background-color: $black
+		height: 120px
+		color: white 
+
+.footer-nav
+	display: flex
+	z-index: 100
+	ul
+		li
+			display: inline-flex
+			height: 100%
+			justify-content: center
+			flex-direction: column
+			list-style-type: none
+			margin-left: 7px
+			&:first-child
+				margin-left: 0
+		a
+			display: flex
+			height: 100%
+			justify-content: center
+			flex-direction: column
+			padding: 0 15px
+			text-decoration: none
+			letter-spacing: 0.2px
+			color: $whiteText
+			font-weight: 600
+			font-size: 16px
+			font-family: 'Raleway', sans-serif
+			text-transform: uppercase
+			letter-spacing: 1px
+			transition: 0.25s ease-out
+			&:hover 
+				color: $accentText
+		.active 
+			color: $whiteText
+			background-color: $accent
+			&:hover
+				color: $whiteText
+				cursor: auto
+
+	
+.footer-socials
+	display: flex
+	z-index: 100
+	ul
+		display: flex
+		li
+			display: inline-flex
+			justify-content: center
+			flex-direction: column
+			list-style-type: none
+			width: 30px
+			height: 30px
+			margin: auto 0px auto 10px
+			&:first-child
+				margin-left: 0
+		a
+			display: flex
+			flex-direction: column
+			text-align: center
+			padding: 0 7px
+			text-decoration: none
+			color: $blackText
+			background-color: $white
+			font-size: 18px
+			transition: 0.25s ease-out
+			&:last-child
+			margin-left: 0
+			&:hover 
+				color: $whiteText
+				background-color: $accentText
+
+		
+
+
+
+			
+
+
+
+
