@@ -48,10 +48,8 @@
 	display: inline-block
 	border: solid 1px $grey
 	&-title
-		// position: relative
 		display: flex
 		color: $blackText
-		// font-size: 36px
 		font-weight: 500	
 		margin-top: 30px
 		padding: 0 10px
@@ -74,7 +72,61 @@
 		font-size: 18px
 		font-family: "Fira Sans", sans-serif
 		font-style: italic
-		// margin-top: 30px
 		padding: 0 10px
-a.thumb-default:hover
-	background-color: $grey
+	&-link
+		position: absolute
+		bottom: 0
+
+		&:hover
+			h5
+				color: $accentText
+			color: $accentText
+
+
+
+.figure-wrap
+  figure
+    margin: 0
+    position: relative
+    img
+      max-width: 100%
+      display: block
+      position: relative
+  figcaption
+    position: absolute
+    top: 0
+    left: 0
+    padding: 20px
+    background: #2c3f52
+    color: $whiteText
+    h5
+      text-transform: uppercase
+      color: $whiteText
+      display: inline-block
+      margin-bottom: 15px
+      transition: 0.25s ease-out
+    i
+    	font-size: 18px
+    	padding-left: 5px
+    
+// effects
+.cs-style-4
+  figure
+    transform-style: preserve-3d
+    > div
+      overflow: hidden
+  figcaption
+    height: 100%
+    width: 80%
+    opacity: 0
+    backface-visibility: hidden
+    transform-origin: 0 0
+    transform: rotateY(-90deg)
+    transition: transform 0.4s, opacity 0.1s 0.3s
+
+.thumb-portfolio
+  &:hover figcaption, &.cs-hover figcaption
+    opacity: 0.9
+    transform: rotateY(0deg)
+    transition: transform 0.4s, opacity 0.1s
+
