@@ -365,6 +365,9 @@ a .active {
   height: 100%;
   width: 100%; }
 
+.mail {
+  letter-spacing: 2px; }
+
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -3638,8 +3641,8 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
 
 .mapouter {
   text-align: right;
-  height: 600px;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
   .mapouter .gmap_canvas {
     overflow: hidden;
     background: none !important;
@@ -3651,11 +3654,12 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
 
 @media (min-width: 1470px) {
   .mapouter {
-    height: 750px; }
+    height: 370px; }
     .mapouter .gmap_canvas {
-      height: 750px; }
+      height: 370px; }
       .mapouter .gmap_canvas iframe {
-        height: 750px; } }
+        height: 370px;
+        margin-left: 100px; } }
 
 .sandwich {
   width: 28px;
@@ -4701,3 +4705,15 @@ form {
     padding: 10px;
     outline: none;
     border: none; }
+
+.contact-info-item {
+  margin-top: 30px; }
+  .contact-info-item:first-of-type {
+    margin-top: 60px; }
+  .contact-info-item h4 {
+    display: inline-block;
+    color: #035E7B;
+    margin-right: 5px; }
+  .contact-info-item p {
+    display: inline-block;
+    font-size: 22px; }
