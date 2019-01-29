@@ -41,12 +41,11 @@ h1, h2, h3, h4, h5, h6, [class*='heading-']
 // ** H1
 // ** --------------------------------------------------
 h1, .heading-1
-	font-size: 36px
-	line-height: 1.2
-
-@media (min-width: 1470px)
+	font-size: 42px
+@media (max-width: 1400px)
 	h1, .heading-1
-		font-size: 42px
+		font-size: 36px
+		line-height: 1.2
 @media (max-width: 480px)
 	h1, .heading-1
 		font-size: 27px
@@ -55,15 +54,14 @@ h1, .heading-1
 // **
 // ** H2
 // ** --------------------------------------------------
-h2, .heading-2
-	font-size: 30px
-	//30
-	line-height: 1.2
 
-@media (min-width: 1470px)
+h2, .heading-2
+	font-size: 36px
+
+@media (max-width: 1400px)
 	h2, .heading-2
-		font-size: 36px
-		// 36
+		font-size: 30px
+		line-height: 1.2
 
 h2 .heading-4, .heading-2 .heading-4
 	display: block
@@ -85,23 +83,36 @@ h2 * + .heading-main-text, .heading-2 * + .heading-main-text
 // ** H3
 // ** --------------------------------------------------
 h3, .heading-3
-	font-size: 26px
+	font-size: 30px
 	line-height: 1.2
+
+@media (max-width: 1400px)
+	h3, .heading-3
+		font-size: 26px
+		line-height: 1.2
 
 @media (max-width: 480px)
 	h3, .heading-3
 		font-size: 16px
 
-@media (min-width: 1470px)
-	h3, .heading-3
-		font-size: 30px
 
 // **
 // ** H4
 // ** --------------------------------------------------
+@media (max-width: 1400px)
+	h4, .heading-4
+		font-size: 22px
+	
 h4, .heading-4
-	font-size: 22px
+	font-size: 26px
 	line-height: 1.2
+	
+@media (min-width: 1200px)
+	.heading-4 + h1
+		margin-top: 25px
+@media (max-width: 480px)
+	h4, .heading-4
+		font-size: 16px
 
 * + h4
 	margin-top: 15px
@@ -112,15 +123,6 @@ i + h4
 	a:hover
 		color: $greenText
 
-@media (min-width: 1470px)
-	h4, .heading-4
-		font-size: 26px
-@media (min-width: 1200px)
-	.heading-4 + h1
-		margin-top: 25px
-@media (max-width: 480px)
-	h4, .heading-4
-		font-size: 16px
 
 // **
 // ** H5

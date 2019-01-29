@@ -1,7 +1,6 @@
 .page-header
 	display: flex
 	padding: 25px 220px 0 
-	// border-bottom: 1px solid $grey
 	z-index: 0
 	&__branding
 		font-size: 28px
@@ -16,9 +15,6 @@
 		left: 50px
 
 
-
-
-
 	&__menu
 		display: flex
 		flex-direction: row
@@ -28,6 +24,17 @@
 		background-color: $black
 		height: 60px
 		color: white 
+
+@media (max-width: 1400px)
+	.page-header
+		&__branding
+			font-size: 24px
+		&__menu
+			margin-top: 20px	
+			padding: 0px 20px
+			height: 50px
+		
+
 .page-header__menu
 	z-index: 100
 	position: relative
@@ -68,7 +75,15 @@
 				color: $whiteText
 				cursor: auto
 
+@media (max-width: 1400px)
+	.primary-nav
+		ul
+			li
+			a
+				padding: 0 15px
+				font-size: 14px
 	
+
 .prymary-socials
 	display: flex
 	z-index: 100
@@ -100,6 +115,16 @@
 				color: $whiteText
 				background-color: $accentText
 
+@media (max-width: 1400px)
+	.prymary-socials
+		ul
+			li
+				width: 25px
+				height: 25px
+			a
+				padding: 0 5px
+				font-size: 16px
+				
 		
 
 
