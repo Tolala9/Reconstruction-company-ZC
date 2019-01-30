@@ -34,6 +34,30 @@ html
 	&.mobile .ui-to-top, &.tablet .ui-to-top
 		display: none !important
 
+
+@media (max-width: 1400px)
+	.ui-to-top
+		width: 145px
+		height: 50px
+		font-size: 18px
+		right: 60px
+		bottom: 0px
+		transition: .45s all ease-in-out
+		transform: translateY(80px)
+		opacity: 0.8
+		&:hover
+			opacity: 1
+			background: $accent
+			text-decoration: none
+		&:focus
+			color: #fff
+		&.active
+			transform: translateY(0px)
+		i
+			font-size: 24px
+			margin-right: 15px
+
+
 // @media (max-width: 480px)
 // 	.ui-to-top
 // 		right: 20px

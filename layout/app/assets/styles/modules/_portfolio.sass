@@ -16,13 +16,18 @@
 			li.active
 				color: $accent
 
+@media (max-width: 1400px)
+	.section__portfolio
+		.controls
+			font-size: 18px
+			margin-bottom: 30px
+
 #portfolio-grid
 	display: block
 	width: 100%
 
 .portfolio-title
 	text-align: center
-	font-size: 42px
 	margin-bottom: 30px
 
 .portfolio-item
@@ -31,6 +36,9 @@
 	float: left
 	margin-bottom: 60px
 
+@media (max-width: 1400px)
+	.portfolio-item
+		margin-bottom: 30px
 	
 .portfolio-button
 	display: flex
@@ -63,16 +71,14 @@
 		width: 100%
 		height: auto
 	&-address
-		font-size: 18px
 		font-family: "Fira Sans", sans-serif
 		font-style: italic
 		margin-top: 30px
-		padding: 0 10px
+		padding: 0 10px 
 	&-time
-		font-size: 18px
 		font-family: "Fira Sans", sans-serif
 		font-style: italic
-		padding: 0 10px
+		padding: 0 10px 10px
 	&-link
 		position: absolute
 		bottom: 0
