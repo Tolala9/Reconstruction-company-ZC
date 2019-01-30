@@ -26,7 +26,21 @@
 		&__menu
 			padding: 0px 60px
 			height: 90px
-
+@media (max-width: 1200px)		
+	.page-footer
+		&__branding
+			font-size: 18px
+		&__contacts
+		&__menu
+			padding: 0px 30px
+			height: 60px
+@media (max-width: 850px)
+	.page-footer
+		&__menu
+			padding: 0px 0px
+@media (max-width: 800px)
+	.page-footer__menu
+		display: none
 .footer-nav
 	display: flex
 	z-index: 100
@@ -70,8 +84,19 @@
 			li
 			a
 				font-size: 14px
-				
-	
+				padding: 0 5px
+
+@media (max-width: 1200px)				
+	.footer-nav
+		display: flex
+		z-index: 100
+		ul
+			li
+			a
+				font-size: 12px
+				padding: 0 2px
+
+
 .footer-socials
 	display: flex
 	z-index: 100

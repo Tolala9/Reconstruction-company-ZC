@@ -1,5 +1,7 @@
 .section__service
 	position: relative
+	max-height: 700px
+	overflow: hidden
 
 .serivce__block
 	position: absolute
@@ -23,3 +25,28 @@
 		padding: 60px 30px 30px
 	.service__title
 			padding-bottom: 30px
+@media (max-width: 1200px)
+	.section__service
+		position: relative
+		max-height: 500px
+
+@media (max-width: 900px)
+	.serivce__block
+		max-width: 600px
+		margin-left: 60px
+		padding: 60px 30px 30px
+@media (max-width: 700px)
+	.section__service
+		position: relative
+		// max-height: 900px
+		overflow: hidden
+	.serivce__block
+		max-width: 100%
+		margin-left: 0px
+		padding: 60px 30px 30px
+@media (max-width: 650px)
+	.section-divider
+		display: none
+	.section__service
+		display: none
+		

@@ -32,8 +32,32 @@
 		&__menu
 			margin-top: 20px	
 			padding: 0px 20px
-			height: 50px
-		
+			height: 50px 
+@media (max-width: 1350px) 
+	.page-header
+		padding: 25px 16% 0 
+		&__logo
+			display: none
+@media (min-width: 480px) and (max-width: 1350px)
+	.page-header
+		padding: 25px 5% 0 
+@media (max-width: 800px) 
+	.page-header
+		&__contacts
+			display: flex
+			justify-content: center
+			margin: 15px 0px
+@media (max-width: 570px)
+	.page-header 
+		padding: 25px 2% 0 
+		&__contacts
+			display: flex
+			flex-direction: column
+			.contact-block__icon--big
+				display: none
+			
+
+
 
 .page-header__menu
 	z-index: 100
@@ -82,8 +106,21 @@
 			a
 				padding: 0 15px
 				font-size: 14px
-	
 
+@media (min-width: 480px) and (max-width: 1000px)
+	.primary-nav
+		ul
+			li
+			a
+				padding: 0 5px
+				font-size: 12px
+	.page-header
+			&__menu
+				height: 40px
+@media (max-width: 800px)
+	.page-header
+			&__menu
+				display: none
 .prymary-socials
 	display: flex
 	z-index: 100
@@ -124,6 +161,8 @@
 			a
 				padding: 0 5px
 				font-size: 16px
+
+	
 				
 		
 
