@@ -2570,6 +2570,10 @@ html {
   .section-notoppading {
     padding: 0px 60px; } }
 
+@media (max-width: 575px) {
+  .section-notoppading {
+    padding: 0px 15px; } }
+
 .section-divider {
   height: 110px; }
 
@@ -2961,6 +2965,23 @@ html {
 a.thumb-default:hover {
   background-color: #DADDD8; }
 
+@media (max-width: 575px) {
+  .thumb-default {
+    max-width: 400px;
+    margin: auto auto 40px auto;
+    background-color: #FFFFFF;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .thumb-default h3 {
+      font-size: 24px; } }
+
 .thumb-default__icon {
   max-width: 604px;
   background-color: #FFFFFF; }
@@ -3161,6 +3182,16 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
     .ui-to-top i {
       font-size: 24px;
       margin-right: 15px; } }
+
+@media (max-width: 575px) {
+  .ui-to-top {
+    width: 104px;
+    height: 45px;
+    right: 20px;
+    font-size: 14px; }
+    .ui-to-top i {
+      font-size: 18px;
+      margin-right: 10px; } }
 
 .swiper-main-wrap {
   position: relative; }
@@ -3747,6 +3778,22 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
       display: none; }
     .swiper-modern h1 {
       margin-top: 0px; } }
+
+@media (max-width: 520px) {
+  .swiper-modern .text-wrapper {
+    max-width: 600px;
+    padding: 30px;
+    margin-top: 0px; }
+    .swiper-modern .text-wrapper .button {
+      min-height: 20px; } }
+
+@media (max-width: 1470px) {
+  .swiper-modern .text-wrapper .button {
+    min-height: 40px; } }
+
+@media (max-width: 520px) {
+  .swiper-modern .text-wrapper .button {
+    min-height: 10px; } }
 
 .mapouter {
   text-align: right;
@@ -4635,6 +4682,12 @@ Instead edit gulp/templates/sprite */
     text-align: center;
     padding-left: 0; } }
 
+@media (max-width: 575px) {
+  .adv-wrap-item {
+    margin-bottom: 30px;
+    text-align: center;
+    padding-left: 0; } }
+
 .section_action {
   padding-left: 90px;
   padding-right: 90px; }
@@ -4675,7 +4728,8 @@ Instead edit gulp/templates/sprite */
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  color: #222931; }
 
 @media (max-width: 1400px) {
   .section_action {
@@ -4692,6 +4746,16 @@ Instead edit gulp/templates/sprite */
   .action__button {
     max-width: 220px;
     margin: auto; } }
+
+@media (max-width: 770px) {
+  .action__text {
+    margin-top: 20px;
+    text-align: center; }
+  .action__button {
+    margin-top: 30px; }
+  .section_action {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 .section__service {
   position: relative;
@@ -4847,6 +4911,24 @@ Instead edit gulp/templates/sprite */
       .thumb-portfolio-link:hover h5 {
         color: #035E7B; }
 
+@media (max-width: 575px) {
+  .thumb-portfolio {
+    max-width: 400px; }
+  .portfolio-item {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 40px; }
+    .portfolio-item h3 {
+      font-size: 24px; }
+  #portfolio-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+
 .figure-wrap figure {
   margin: 0;
   position: relative; }
@@ -4963,6 +5045,12 @@ form {
   .contact-img {
     display: none; } }
 
+@media (max-width: 575px) {
+  .contact-form {
+    margin: 60px 15px 60px 15px; }
+  form textarea {
+    margin-bottom: 0; } }
+
 .contact-info-item {
   margin-top: 30px; }
   .contact-info-item:first-of-type {
@@ -4993,6 +5081,10 @@ form {
     margin-left: 60px; }
     .contact-info-item:last-of-type {
       margin-bottom: 30px; } }
+
+@media (max-width: 575px) {
+  .contact-info-item {
+    margin-left: 0px; } }
 
 .footer {
   padding: 15px 0; }
@@ -5070,7 +5162,10 @@ form {
 
 @media (max-width: 800px) {
   .page-footer__menu {
-    display: none; } }
+    padding-left: 15px;
+    padding-right: 15px; }
+    .page-footer__menu .footer-nav {
+      display: none; } }
 
 .footer-nav {
   display: -webkit-box;
