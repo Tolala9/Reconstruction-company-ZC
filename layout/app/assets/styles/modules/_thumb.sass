@@ -41,11 +41,69 @@ a.thumb-default:hover
 		h3
 			font-size: 24px
 
-			
-		
+.flex-wrap	
+	display: flex	
+	justify-content: space-between
+.thumb-service
+	max-width: 31%
+	background-color: $white
+	display: flex
+	flex-direction: column
+	margin-bottom: 30px
+	&-img
+		width: 100%
+		height: auto
+		margin-bottom: 10px
+	
+	.thumb-service__descr
+		display: flex
+		.thumb-service__icon
+			width: 64px
+			height: 64px
+			margin-left: 10px
+			margin-bottom: 10px
+		.thumb-service-title
+			display: flex
+			color: $blackText
+			font-weight: 500	
+			margin-left: 30px
+a.thumb-service:hover
+	background-color: $grey	
+
+.thumb-service-img:before
+	content: " "
+	width: 100%
+	height: 100%
+	background-color: #fff
+	z-index: 100
 
 
+picture
+	position: relative
+	.hover-text
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 100%
+		// display: none
 
+@media (max-width: 1100px)
+	.thumb-service
+		max-width: 47%
+		.thumb-service__descr
+			.thumb-service__icon
+				width: 52px
+				height: 52px
+@media (max-width: 580px)
+	.thumb-service
+		max-width: 99%
+		.thumb-service__descr
+			.thumb-service-title
+				font-size: 24px
+			.thumb-service__icon
+				width: 48px
+				height: 48px
+				
 // **
 // ** Thumb default Icon
 // ** --------------------------------------------------
@@ -146,3 +204,30 @@ a.thumb-default:hover
 .thumb-icon
 	.divider-title + p
 		margin-top: 10px
+
+		
+// effects
+// .cs-style-3 figure
+//   overflow: hidden
+//   img
+//     transition: transform 0.4s
+
+// .no-touch .cs-style-3 figure:hover img
+//   transform: translateY(-50px)
+
+// .cs-style-3
+//   figure.cs-hover img
+//     transform: translateY(-50px)
+//   figcaption
+//     height: 100px
+//     width: 100%
+//     top: auto
+//     bottom: 0
+//     opacity: 0
+//     transform: translateY(100%)
+//     transition: transform 0.4s, opacity 0.1s 0.3s
+
+// .no-touch .cs-style-3 figure:hover figcaption, .cs-style-3 figure.cs-hover figcaption
+//   opacity: 1
+//   transform: translateY(0px)
+//   transition: transform 0.4s, opacity 0.1s

@@ -2464,14 +2464,23 @@ html {
       color: #FFFFFF;
       cursor: auto; }
 
-@media (max-width: 1400px) {
+@media (max-width: 1530px) {
   .primary-nav ul a {
-    padding: 0 15px;
+    padding: 0 9px;
+    font-size: 14px; } }
+
+@media (max-width: 1400px) {
+  .primary-nav ul li {
+    margin-left: 5px; }
+  .primary-nav ul a {
+    padding: 0 9px;
     font-size: 14px; } }
 
 @media (min-width: 480px) and (max-width: 1000px) {
+  .primary-nav ul li {
+    margin-left: 2px; }
   .primary-nav ul a {
-    padding: 0 5px;
+    padding: 0 2px;
     font-size: 12px; }
   .page-header__menu {
     height: 40px; } }
@@ -2781,7 +2790,7 @@ html {
     display: flex;
     width: 100%; }
   .button-primary {
-    color: #fff;
+    color: #fff !important;
     background-color: #035E7B; }
     .button-primary:focus, .button-primary:active {
       color: #fff;
@@ -2987,6 +2996,88 @@ a.thumb-default:hover {
     .thumb-default h3 {
       font-size: 24px; } }
 
+.flex-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.thumb-service {
+  max-width: 31%;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px; }
+  .thumb-service-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; }
+  .thumb-service .thumb-service__descr {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .thumb-service .thumb-service__descr .thumb-service__icon {
+      width: 64px;
+      height: 64px;
+      margin-left: 10px;
+      margin-bottom: 10px; }
+    .thumb-service .thumb-service__descr .thumb-service-title {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      color: #222931;
+      font-weight: 500;
+      margin-left: 30px; }
+
+a.thumb-service:hover {
+  background-color: #DADDD8; }
+
+.thumb-service-img:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100; }
+
+picture {
+  position: relative; }
+  picture .hover-text {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%; }
+
+@media (max-width: 1100px) {
+  .thumb-service {
+    max-width: 47%; }
+    .thumb-service .thumb-service__descr .thumb-service__icon {
+      width: 52px;
+      height: 52px; } }
+
+@media (max-width: 580px) {
+  .thumb-service {
+    max-width: 99%; }
+    .thumb-service .thumb-service__descr .thumb-service-title {
+      font-size: 24px; }
+    .thumb-service .thumb-service__descr .thumb-service__icon {
+      width: 48px;
+      height: 48px; } }
+
 .thumb-default__icon {
   max-width: 604px;
   background-color: #FFFFFF; }
@@ -3129,7 +3220,7 @@ a.thumb-default:hover {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: bold;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   background: #035E7B;
   right: 90px;
   bottom: 0px;
@@ -3939,7 +4030,7 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
   .toggle-mnu:focus {
     outline: none; }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .toggle-mnu {
     display: none; } }
 
@@ -4058,7 +4149,6 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
     .page-title .wrapper .text-wrap {
       width: 60%; }
       .page-title .wrapper .text-wrap p {
-        text-transform: uppercase;
         font-size: 12px; } }
 
 .page-title-wrapper {
@@ -5224,6 +5314,19 @@ form {
     .footer-nav ul a {
       font-size: 12px;
       padding: 0 2px; } }
+
+@media (max-width: 930px) {
+  .footer-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 100; }
+    .footer-nav ul li {
+      margin-left: 2px; }
+      .footer-nav ul li a {
+        font-size: 12px;
+        padding: 0 1px; } }
 
 .footer-socials {
   display: -webkit-box;
