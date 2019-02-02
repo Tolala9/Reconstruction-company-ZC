@@ -250,7 +250,12 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100%; }
+  .img-wrapper img {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
 
 @media (max-width: 1200px) {
   .cell-lg-3 .img-wrapper {
@@ -3850,7 +3855,7 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
   z-index: 200; }
 
 .sw-topper, .sw-bottom, .sw-footer {
-  background-color: #222931; }
+  background-color: #035E7B; }
 
 .sw-topper {
   position: relative;
@@ -3927,11 +3932,9 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
   float: right;
   position: absolute;
   z-index: 100;
-  border: 1px solid #222931;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  right: 20px;
-  top: 45px;
+  border: 2px solid #222931;
+  right: 15px;
+  top: 30px;
   cursor: pointer; }
   .toggle-mnu:focus {
     outline: none; }
@@ -4005,8 +4008,6 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
             height: 35px;
             line-height: 1;
             border: 1px solid #222931;
-            -webkit-border-radius: 8px;
-                    border-radius: 8px;
             -webkit-transition: 0.25s ease-out;
             -o-transition: 0.25s ease-out;
             transition: 0.25s ease-out; }
@@ -4016,68 +4017,53 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
               -o-transition: 0.25s ease-out;
               transition: 0.25s ease-out; }
             .top-mnu .mobile-socials ul li a .mobile-socials-frame:hover, .top-mnu .mobile-socials ul li a .mobile-socials-frame:focus {
-              background-color: #0D2D62; }
+              background-color: #035E7B; }
               .top-mnu .mobile-socials ul li a .mobile-socials-frame:hover i, .top-mnu .mobile-socials ul li a .mobile-socials-frame:focus i {
                 color: #FFFFFF; }
 
 .page-title {
   min-height: 320px;
-  max-height: 653px; }
+  max-height: 420px;
+  overflow: hidden;
+  position: relative;
+  top: -26px; }
   .page-title-img {
     -webkit-background-size: cover;
             background-size: cover; }
+  .page-title .wrapper {
+    padding: 0; }
+    .page-title .wrapper .text-wrap {
+      background-color: #fff;
+      opacity: .85;
+      padding: 30px;
+      width: 40%; }
+      .page-title .wrapper .text-wrap p {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 10px; }
+        .page-title .wrapper .text-wrap p a:hover {
+          color: #035E7B; }
+        .page-title .wrapper .text-wrap p a.active {
+          text-decoration: underline; }
 
-@media (min-width: 768px) {
-  .page-title .page-title-img-caption {
-    padding-left: 5%; } }
+@media (max-width: 800px) {
+  .page-title {
+    top: 0px; }
+    .page-title .wrapper .text-wrap {
+      width: 60%; } }
 
-@media (max-width: 1200px) {
-  .page-title .page-title-img-caption {
-    position: relative;
-    top: -60px;
-    padding-top: 90px;
-    min-height: 320px;
-    max-height: 500px; }
-    .page-title .page-title-img-caption p {
-      padding-right: 0; } }
-
-@media (min-width: 1200px) {
-  .page-title .page-title-img-caption {
-    position: relative;
-    top: -200px;
-    padding-top: 90px;
-    padding-left: 5%;
-    min-height: 320px;
-    max-height: 400px; } }
-
-@media (min-width: 1600px) {
-  .page-title .page-title-img-caption {
-    position: relative;
-    top: -180px;
-    padding-top: 110px;
-    padding-left: 0;
-    padding-left: 4%;
-    min-height: 320px;
-    max-height: 500px; } }
-
-.page-header + .page-title {
-  margin-top: 0; }
-
-@media (max-width: 1199px) {
-  .page-title .page-title-img {
-    position: relative; }
-    .page-title .page-title-img:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: -10; } }
+@media (max-width: 520px) {
+  .page-title {
+    top: 0px; }
+    .page-title .wrapper .text-wrap {
+      width: 60%; }
+      .page-title .wrapper .text-wrap p {
+        text-transform: uppercase;
+        font-size: 12px; } }
 
 .page-title-wrapper {
   position: relative;
-  width: 100%;
+  width: 40%;
   height: 100%;
   z-index: 1;
   display: -ms-flexbox;
@@ -4099,14 +4085,9 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
   margin-top: 40px;
   z-index: 10; }
 
-@media (min-width: 1470px) {
-  .page-title h1 {
-    margin-top: 60px; } }
-
-@media (max-width: 760px) {
-  .page-title h1 {
-    margin-top: 0px;
-    padding-right: 0; } }
+@media (max-width: 520px) {
+  .page-title-img-caption p, .page-title-img-caption h1 {
+    padding-right: 0%; } }
 
 .list__default ul li {
   font-family: "Fira Sans", sans-serif;
