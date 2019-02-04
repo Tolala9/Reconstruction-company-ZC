@@ -3062,6 +3062,11 @@ picture {
             transform: translateY(-50%);
     width: 100%; }
 
+@media (max-width: 1400px) {
+  .thumb-service .thumb-service__descr .thumb-service__icon {
+    width: 52px;
+    height: 52px; } }
+
 @media (max-width: 1100px) {
   .thumb-service {
     max-width: 47%; }
@@ -4169,7 +4174,7 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
           box-sizing: content-box; }
 
 .page-title-img-caption p, .page-title-img-caption h1 {
-  padding-right: 40%; }
+  padding-right: 20%; }
 
 .page-title h1 {
   margin-top: 40px;
@@ -4827,6 +4832,45 @@ Instead edit gulp/templates/sprite */
   .section_action {
     padding-left: 15px;
     padding-right: 15px; } }
+
+.img__service {
+  margin-bottom: 20px; }
+
+.section-title__service {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px; }
+  .section-title__service:before {
+    display: inline-block;
+    vertical-align: center;
+    content: ' ';
+    width: 40px;
+    height: 4px;
+    background-color: #035E7B;
+    margin: auto 15px auto 0; }
+
+.section-list__service {
+  font-size: 26px;
+  line-height: 1.2;
+  margin-left: 20px;
+  margin-bottom: 15px; }
+  .section-list__service i {
+    font-size: 26px;
+    margin-right: 5px; }
+
+@media (max-width: 1400px) {
+  .section-list__service {
+    font-size: 22px; }
+    .section-list__service i {
+      font-size: 22px; } }
+
+@media (max-width: 480px) {
+  .section-list__service {
+    font-size: 16px; }
+    .section-list__service i {
+      font-size: 16px; } }
 
 .section__service {
   position: relative;
