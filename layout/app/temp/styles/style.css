@@ -81,17 +81,17 @@ h2 * + .heading-main-text, .heading-2 * + .heading-main-text {
     margin-top: 19px; } }
 
 h3, .heading-3 {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.2; }
 
 @media (max-width: 1400px) {
   h3, .heading-3 {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 1.2; } }
 
 @media (max-width: 900px) {
   h3, .heading-3 {
-    font-size: 24px; } }
+    font-size: 20px; } }
 
 @media (max-width: 480px) {
   h3, .heading-3 {
@@ -261,6 +261,21 @@ img {
   margin-right: 100px;
   max-width: 100%;
   height: auto; }
+
+.img-wrapper-obj {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .img-wrapper-obj img {
+    margin-bottom: 30px; }
 
 @media (max-width: 1200px) {
   .cell-lg-3 .img-wrapper {
@@ -5447,3 +5462,55 @@ form {
   .footer-socials ul a {
     padding: 0 5px;
     font-size: 16px; } }
+
+.img__obj {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+
+h3.section-title__obj {
+  margin-top: 30px; }
+
+.section-title__obj {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px; }
+  .section-title__obj:before {
+    display: inline-block;
+    vertical-align: center;
+    content: ' ';
+    width: 40px;
+    height: 4px;
+    background-color: #035E7B;
+    margin: auto 15px auto 0; }
+
+.section-list__obj {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-left: 20px;
+  margin-bottom: 15px; }
+  .section-list__obj span {
+    font-style: italic;
+    margin-right: 20px; }
+  .section-list__obj i {
+    font-size: 22px;
+    margin-right: 10px; }
+
+@media (max-width: 1400px) {
+  .section-list__obj {
+    font-size: 22px; }
+    .section-list__obj i {
+      font-size: 18px; } }
+
+@media (max-width: 760px) {
+  .section-title__obj + p {
+    margin-bottom: 30px; } }
+
+@media (max-width: 480px) {
+  .section-list__obj {
+    font-size: 16px; }
+    .section-list__obj i {
+      font-size: 16px; } }
