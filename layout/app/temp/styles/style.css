@@ -257,6 +257,11 @@ img {
         -ms-flex-item-align: center;
             align-self: center; }
 
+.img-section-map {
+  margin-right: 100px;
+  max-width: 100%;
+  height: auto; }
+
 @media (max-width: 1200px) {
   .cell-lg-3 .img-wrapper {
     margin-top: 30px; } }
@@ -2665,6 +2670,13 @@ html {
 
 @media (max-width: 1200px) {
   .section-lg--topline {
+    padding: 30px 0px 60px 0px; } }
+
+.section-lg--map {
+  padding: 60px 0px 110px 0px; }
+
+@media (max-width: 1200px) {
+  .section-lg--map {
     padding: 30px 0px 60px 0px; } }
 
 .section-relative {
