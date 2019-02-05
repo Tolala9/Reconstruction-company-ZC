@@ -1,0 +1,30 @@
+.wrap-vacancy	
+	display: flex
+	.wrap-vacancy__icon
+		display: flex
+		flex: 1
+		justify-content: space-around
+		align-items: center
+		border: 2px dashed $accent
+		margin-right: 20px
+
+		.vacancy__icon
+			width: 128px
+			height: 128px
+
+	.wrap-vacancy-name
+		flex: 2
+	+ p
+		margin-top: 20px
+		margin-bottom: 60px
+
+@media (max-width: 580px)
+	.wrap-vacancy	
+		flex-direction: column
+		.wrap-vacancy__icon
+			margin-right: 0px	
+			margin-bottom: 20px
+			.vacancy__icon
+				padding: 20px 0
+		.wrap-vacancy-name
+				
