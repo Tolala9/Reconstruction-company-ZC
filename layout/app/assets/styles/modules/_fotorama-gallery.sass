@@ -1,0 +1,46 @@
+.fotorama	
+	display: flex
+	margin: auto
+	&__nav
+		&-wrap
+			position: absolute
+			bottom: 10px
+			padding: 0 30px
+			width: 100%
+	&__thumb
+		box-sizing: border-box
+		border: 3px $white solid
+		transition: border-color .5s ease
+		&-border
+			border-color: $black
+
+	&__arr-
+		&-next, &-prev
+			&::before
+				font-family: fontawesome
+				font-size: 28px
+
+		&-next
+			&::before
+				content: '\f04e'
+		&-prev
+			&::before
+				content: '\f04a'
+
+.fotorama__fullscreen-icon
+	position: absolute
+	top: 15px
+	right: 20px
+	&::before
+		font-family: fontawesome
+		font-size: 27px
+		content: '\f047'
+.fotorama--fullscreen .fotorama__nav
+  background-color: rgba(#FFF, 0.01)
+.fotorama--fullscreen .fotorama__fullscreen-icon
+	position: absolute
+	top: 50px
+	right: 110px
+	color: $white
+.fotorama--fullscreen .fotorama__nav-wrap	
+	position: relative
